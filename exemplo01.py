@@ -1,6 +1,7 @@
 # import pandas as pd
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt 
 
 ENDERECO_DADOS = 'https://www.ispdados.rj.gov.br/Arquivos/BaseDPEvolucaoMensalCisp.csv'
 
@@ -25,7 +26,15 @@ except Exception as e:
 # Calculando a correlação entre roubo_veiculo e recuperacao_veiculos
 try:
     correlacao = np.corrcoef(df_veiculos['roubo_veiculo'], df_veiculos['recuperacao_veiculos'])
-    print(correlacao)
+    print(f' Correlação entre roubo de vieculos e recuperação: {correlacao}')
+
+    #plotando o grafico de dispersão
+    plt.scatter(df_veiculos['roubo_veiculo'], df_veiculos['recuperacao_veiculos']) 
+    plt.title('fCorrelação: {correlacao:.2f}')
+    plt.xlabel('Roubo de Veículos') 
+    plt.ylabel('Recuperação de Veículos')
+    plt.show()
+    
 
 
 except Exception as e:
