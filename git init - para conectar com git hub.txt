@@ -1,0 +1,64 @@
+git init
+
+git config user.name silviacpmachado
+
+git config user.email silviacpmachado@gmail.com
+
+git remote add origin https://github.com/silviacpmachado/AULA-03.git
+
+git branch -M main
+
+git status
+
+git add .
+
+git status
+
+git commit -m "inicializa"
+
+git push origin main
+
+Depois que modificar o vscode, para subir os comandos são:
+
+git status
+
+git add .
+
+git status
+
+git commit -m "inicializa"
+
+git push origin main
+
+
+
+ Criar o Ambiente Virtual - faz isso no terminal!!!!!!!
+# python -m venv venv
+
+# Ativa o ambiente
+# source ./venv/Scripts/activate
+
+# Instalar as bibliotecas normalmente:
+# pip install pandas.....
+
+# Salva um arquivo com a versão específica de todas as bibliotecas instaladas no projeto
+# pip freeze > requirements.txt
+
+# Desativar o ambiente virtual
+# deactivate
+
+# Exclui o ambiente virtual
+# rm -rf venv
+
+
+# criar git ignore
+touch .gitignore - digitar no terminal.
+
+
+# Este comando instala um ambiente virtual novo com todas as bibliotecas informadas no arquivo requirements já existente
+# pip install -r requirements.txt
+
+configura - cod runner e python no vscode
+
+
+
